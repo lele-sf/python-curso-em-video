@@ -1,0 +1,6 @@
+frase = input('Digite uma frase: ')
+frase = frase.lower()
+qtnd_a = frase.count('a')
+posicao_prim = frase.find('a')
+posicao_ult = frase.rfind('a')
+print(f'A letra "a" aparece {qtnd_a} vezes.\nA primeira posição que ela aparece é {posicao_prim} e a última é {posicao_ult}')
