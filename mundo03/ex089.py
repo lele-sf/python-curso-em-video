@@ -22,3 +22,15 @@ for i, aluno in enumerate(alunos[0]['nome']):
 
     print(f'{i+1: <4}{aluno: <10}{media:.1f}')
 
+print("-" * 30)
+while True:
+    num_aluno = int(input('Mostrar notas de qual aluno? (999 interrompe): '))
+    if num_aluno == 999:
+        break
+    elif num_aluno > 0 and num_aluno <= len(alunos[0]['nome']):
+        indice_aluno = num_aluno - 1
+        nome_aluno = alunos[0]['nome'][indice_aluno]
+        notas_aluno = (alunos[0]['nota1'][indice_aluno], alunos[0]['nota2'][indice_aluno])
+        print(f'Notas de {nome_aluno} são {notas_aluno}')
+    else:
+        print('Aluno não encontrado.')
