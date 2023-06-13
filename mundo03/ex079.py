@@ -1,13 +1,15 @@
-num_set = set()
+lista = []
 
 while True:
-    num = int(input('Digite um número: '))
-    escolha = input('Você deseja continuar [S/N]? ').upper()
+    num = int(input('Digite um valor: '))
+    escolha = input('Quer continuar? [S/N] ').upper()
+    
+    if num in lista:
+        print('Valor duplicado! Não vou adicionar...')
+    else:
+        lista.append(num)
 
-    num_set.add(num)
     if escolha == 'N':
         break
 
-lista = sorted(num_set)
-
-print(lista)
+print(f'Você digitou os valores {sorted(lista)}')

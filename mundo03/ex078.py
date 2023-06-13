@@ -1,14 +1,20 @@
-lista = []
+lista_num = []
+maior_pos = []
+menor_pos = []
 
-for _ in range(5): 
-    lista.append(int(input('Digite um número: ')))
+for i in range(5):
+    num = int(input(f'Digite um valor para a Posição {i}: '))
+    lista_num.append(num)
 
-maior = max(lista)
-menor = min(lista)
+maior = max(lista_num)
+menor = min(lista_num)
 
-indices_maior = [i+1 for i, num in enumerate(lista) if num == maior]
-indices_menor = [i+1 for i, num in enumerate(lista) if num == menor]
+for index, num in enumerate(lista_num):
+    if num == maior:
+        maior_pos.append(index)
+    elif num == menor:
+        menor_pos.append(index)
 
-print(f'Você digitou os valores {lista}')
-print(f'O maior número digitado foi {maior} nas posições {indices_maior}')
-print(f'O menor número digitado foi {menor} nas posições {indices_menor}')
+print(f'Você digitou os valores {lista_num}')
+print(f'O maior valor digitado foi {maior} nas posições {maior_pos}')
+print(f'O menor valor digitado foi {menor} nas posições {menor_pos}')

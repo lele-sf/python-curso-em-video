@@ -9,7 +9,7 @@ for _ in range(5):
     elif num == min(lista):
         posicao = 0
     else:
-        posicao = lista.index(num)
+        posicao = lista.index(num) - 1
 
     print(f'Adicionado na posição {posicao} da lista...')
 

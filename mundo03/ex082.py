@@ -6,12 +6,15 @@ while True:
     try:
         num = int(input('Digite um número: '))
         escolha = input('Você deseja continuar [S/N]? ').upper()
-        lista.append(num)
         
-        if num % 2 == 0:
-            pares.append(num)
+        if num in lista:
+            print('Valor duplicado! Não vou adicionar...')
         else:
-            impar.append(num)
+            lista.append(num)
+            if num % 2 == 0:
+                pares.append(num)
+            else:
+                impar.append(num)
 
         if escolha == 'N':
             break
