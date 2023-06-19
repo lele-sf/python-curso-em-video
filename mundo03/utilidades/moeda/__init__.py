@@ -23,7 +23,7 @@ def format(n,show=False):
         return n
 
 def titulo(msg):
-    tam = len(msg) * 2
+
     print('-'*tam)
     print(f'\t{msg}')
     print('-'*tam)
