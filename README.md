@@ -4,9 +4,9 @@ Este repositório contém os exercícios resolvidos do curso de Python do Curso 
 
 O curso é dividido em três partes: 
 
-- **Mundo 1** - Fundamentos: variáveis, operadores, entrada/saída, condicionais, repetições, listas e tuplas.
-- **Mundo 2** - Estruturas de Controle: funções, modularização, tratamento de erros, manipulação de arquivos, bibliotecas e módulos.
-- **Mundo 3** - Estruturas Compostas: listas avançadas, dicionários, tuplas avançadas, funções avançadas, módulos e pacotes.
+- **Mundo 1** - Fundamentos: variáveis, operadores, entrada/saída, condicionais, repetições, módulos.
+- **Mundo 2** - Estruturas de Repetição: if, else, for e while.
+- **Mundo 3** - Estruturas de Dados: listas avançadas, dicionários, tuplas avançadas,tratamento de erros, funções avançadas, módulos e pacotes.
 
 ## Pré-requisitos
 
